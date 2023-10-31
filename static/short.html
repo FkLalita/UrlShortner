@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Url Shortener</title>
+    <title>URL Shortener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Url Shortener</h1>
-    <p>Your Original Url: {{.OriginalURL}}</p>
-    <p>Shorten Url: <a href="{{.ShortenURL}}" target="_blank">{{.ShortenURL}}</a></p>
+    <h1>URL Shortener</h1>
+    <p>Your Original URL: {{.OriginalURL}}</p>
+    <p>Shortened URL: <a href="{{.ShortenURL}}" target="_blank">{{.ShortenURL}}</a></p>
 </body>
 </html>
 
